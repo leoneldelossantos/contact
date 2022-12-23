@@ -1,0 +1,19 @@
+<!DOCTYPE HTML>
+<HTML LANG="en">
+<HEAD>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" >
+    <meta name="viewport" content="widtg=device-width, initial-scale=1.0">
+    <TITLE>Ejemplo 4</TITLE>
+</HEAD>
+<BODY>
+    <h1>Hola desde el template de listado de contactos</h1>
+    
+    {% for datos in datos%}
+      
+        <p>Nombre: {{datos.name}}</p>
+        <p>Numero: {{datos.number}}</p>
+        <p>Bool: {{datos.bool}}</p>
+    {% endfor %}
+</BODY>
+</HTML>
